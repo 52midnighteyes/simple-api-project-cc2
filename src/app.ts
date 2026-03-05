@@ -1,6 +1,7 @@
 import express from 'express';
 import { Response, Request, NextFunction } from 'express';
 import { errorHandler } from './middlewares/errorHandler.middleware.js';
+import { cacheUser } from './modules/auth/auth.store.js';
 
 const app = express();
 app.use(express.json());

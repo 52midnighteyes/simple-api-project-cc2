@@ -15,4 +15,4 @@ async function cacheUser(): Promise<void> {
   }
 }
 
-export { userDb };
+export { userDb, cacheUser };

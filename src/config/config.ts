@@ -19,6 +19,7 @@ function toNumber(value: string | undefined, fallback: number): number {
 export const config = {
   PORT: toNumber(process.env.PORT, 8000),
   JWT_SECRET: required('JWT_SECRET'),
+  NODE_ENV: process.env.NODE_ENV ?? 'development',
 };
 
-export const { PORT, JWT_SECRET } = config;
+export const { PORT, JWT_SECRET, NODE_ENV } = config;
