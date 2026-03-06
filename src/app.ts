@@ -1,14 +1,14 @@
 import express from 'express';
 import { Response, Request, NextFunction } from 'express';
 import { errorHandler } from './middlewares/errorHandler.middleware.js';
-import { cacheUser } from './modules/auth/auth.store.js';
-
+import { NODE_ENV } from './config/config.js';
+import authRouter from './modules/auth/auth.route.js'
 const app = express();
 app.use(express.json());
 
 //checker (dev only)
 app.use((req, res, next) => {
-  const isProd = process.env.NODE_ENV === 'production';
+  const isProd = NODE_ENV === 'production';
   if (isProd) return next();
 
   console.log('===== Incoming Request =====');
@@ -25,9 +25,7 @@ app.use((req, res, next) => {
 
 // routes
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Your server is working!');
-});
+app.use('/api', authRouter);
 
 // error handler
 app.use(errorHandler);

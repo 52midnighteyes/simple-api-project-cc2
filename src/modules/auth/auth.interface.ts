@@ -11,3 +11,13 @@ export interface IUser {
   avatar?: string | null;
   role: ERole;
 }
+
+// ------- params
+export interface IRegisterParams {
+  email: string;
+  password: string;
+  first_name: string;
+  last_name: string;
+  avatar?: string | null;
+  role: ERole;
+}

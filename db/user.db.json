@@ -1,29 +1,11 @@
 [
   {
-    "id": "u-001",
-    "email": "admin.satu@test.com",
-    "password": "$2b$10$hashed_password_1",
-    "first_name": "Raden",
-    "last_name": "Mas",
-    "avatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=Raden",
-    "role": 0
-  },
-  {
-    "id": "u-002",
-    "email": "teguh.prakoso@test.com",
-    "password": "$2b$10$hashed_password_2",
-    "first_name": "Teguh",
-    "last_name": "Prakoso",
+    "id": "c8e86336-6e9f-4e47-80f3-c034d3e526ce",
+    "email": "alwisusilo2@gmail.com",
+    "password": "$argon2id$v=19$m=65536,t=3,p=4$ZgnZzRMHN9l0nMyDrb+ujw$yhfDpRAg+3Z5uTuh0ynaY3fWdGYlipdNi6++31P71+8",
+    "first_name": "alwi",
+    "last_name": "susilo",
     "avatar": null,
-    "role": 1
-  },
-  {
-    "id": "u-003",
-    "email": "citra.lestari@test.com",
-    "password": "$2b$10$hashed_password_3",
-    "first_name": "Citra",
-    "last_name": "Lestari",
-    "avatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=Citra",
-    "role": 1
+    "role": "admin"
   }
 ]
